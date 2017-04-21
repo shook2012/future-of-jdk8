@@ -16,7 +16,7 @@ import java.util.function.*;
  *
  * Java8为容器新增一些有用的方法，这些方法有些是为完善原有功能，有些是为引入函数式编程，学习和使用这些方法有助于我们写出更加简洁有效的代码．
  */
-public class LambdasDemo {
+public class LambdasTest {
 
     private static String PREFIX = "aaa";
     private static String HELLO_STRING = "hello, java 8";

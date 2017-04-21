@@ -15,7 +15,7 @@ import java.util.stream.Stream;
  *  1.代码简洁函数式编程写出的代码简洁且意图明确，使用stream接口让你从此告别for循环。
  *  2.多核友好，Java函数式编程使得编写并行程序从未如此简单，你需要的全部就是调用一下parallel()方法。
  */
-public class StreamDemo {
+public class StreamTest {
 
     private List<String> strings = new ArrayList<>();
 
