@@ -1,6 +1,6 @@
 package net.sk.methodreference;
 
-class Person {
+public class Person {
     private String name;
 
     public Person() {
