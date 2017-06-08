@@ -113,6 +113,7 @@ public class StreamTest {
                 .map(String::toUpperCase)
                 .sorted((a, b) -> b.compareTo(a))
                 .forEach(System.out::println);
+        System.out.println(strings);
     }
 
     @Test
@@ -178,7 +179,7 @@ public class StreamTest {
 
     @Test
     public void testCollect() {
-        Stream<String> stream = Stream.of("hello", "java", "8");
+        Stream<String> stream = Stream.of("hello", "hello","java", "8");
 
         //List<String> list = stream.collect(Collectors.toList()); // (1)
 

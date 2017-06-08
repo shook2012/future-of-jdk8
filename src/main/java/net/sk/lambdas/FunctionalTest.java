@@ -33,7 +33,7 @@ public class FunctionalTest {
 
         map.put(1, "one");
         map.put(2, "two");
-        map.put(3, "three");
+        //map.put(3, "three");
     }
 
     /**
@@ -56,12 +56,13 @@ public class FunctionalTest {
     @Test
     public void testPredicate(){
         List<Student> maleList = new School().getPersonList(student -> "男".equals(student.getGender()));
-
         System.out.println(maleList);
-        Predicate<Student> femalePredicate = (student) -> "女".equals(student.getGender());
-        List<Student> femaleList1 = new School().getPersonList2(femalePredicate);
-        List<Student> femaleList2 = new School().getPersonList2(student -> "女".equals(student.getGender()));
 
+        Predicate<Student> femalePredicate = student ->  "女".equals(student.getGender());
+        List<Student> femaleList1 = new School().getPersonList2(femalePredicate);
+
+
+        List<Student> femaleList2 = new School().getPersonList2(student -> "女".equals(student.getGender()));
         System.out.println(femaleList2);
     }
 

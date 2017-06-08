@@ -92,9 +92,9 @@ public class OptionalTest {
 
     @Test
     public void testOptional2(){
-        /*System.out.println(computer.getSoundcard().getUsb().getVersion()); //NPE
+        //System.out.println(computer.getSoundcard().getUsb().getVersion()); //NPE
 
-        if(computer != null){
+        /*if(computer != null){
             Soundcard soundcard = computer.getSoundcard();
             if(soundcard != null){
                 USB usb = soundcard.getUsb();
@@ -104,7 +104,7 @@ public class OptionalTest {
             }
         }*/
 
-        System.out.println(computer.getSoundcard());
+        //System.out.println(computer.getSoundcard());
 
         // Grovvy -> ?.的操作符: computer?.getSoundcard()?.getUSB()?.getVersion()
 
