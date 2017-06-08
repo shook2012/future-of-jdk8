@@ -11,8 +11,12 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
+ * Nashorn:在JDK 8中融合Java与JavaScript之力
+ *
  * Created by fangyt on 2017/6/7.
  * @link http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/
+ *
+ * Avatar.js -> NashornSandbox Node.js的Nashorn版
  */
 public class ScriptEngineManagerTest {
 

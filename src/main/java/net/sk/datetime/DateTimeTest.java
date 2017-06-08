@@ -11,6 +11,9 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
 /**
+ * 新的Java日期/时间API的基础类:
+ * LocalDate, LocalTime, LocalDateTime, Instant, Period, Duration
+ *
  * Created by fangyt on 2017/4/20.
  */
 public class DateTimeTest {
@@ -22,13 +25,13 @@ public class DateTimeTest {
     public void testDate(){
 
         LocalDate today = LocalDate.now();
-        System.out.println("Current Date="+today);
+        System.out.println("Current Date=" + today); //2017-06-08
 
         //Creating LocalDate by providing input arguments
-        LocalDate firstDay_2014 = LocalDate.of(2014, Month.JANUARY, 1);
-        System.out.println("Specific Date=" + firstDay_2014);
+        LocalDate firstDay_2017 = LocalDate.of(2017, Month.JANUARY, 1); //2017-01-01
+        System.out.println("Specific Date=" + firstDay_2017);
 
-        //Try creating date by providing invalid inputs
+        //输入错误的日期会抛出以下异常
         //Exception in thread "main" java.time.DateTimeException: Invalid date 'February 29' as '2014' is not a leap year
         //LocalDate feb29_2014 = LocalDate.of(2014, Month.FEBRUARY, 29);
 
@@ -149,6 +152,7 @@ public class DateTimeTest {
      //default format
      System.out.println("Default format of LocalDate=" + date);
      //specific format
+     //Datetimeformatter:simple beautiful strong immutable thread-safe
      System.out.println(date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
      System.out.println(date.format(DateTimeFormatter.BASIC_ISO_DATE));
 
